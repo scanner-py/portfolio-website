@@ -1,0 +1,244 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: border-box;
+  /* border: none; */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.navbar {
+  /* align-items: center; */
+  /* background-color: rgb(255, 255, 255); */
+  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navbar li {
+  height: 50px;
+}
+
+.navbar a {
+  height: 100%;
+  padding: 0pc 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.navbar a:last-child {
+  margin-right: 40px;
+}
+
+.navbar a:hover {
+  color: #283aff;
+}
+.navbar a:focus {
+  color: #283aff;
+}
+
+.navbar li:first-child {
+  user-select: none;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+.navbar #dico-text:hover {
+  animation: Disco-Text 1.5s infinite;
+}
+.navbar #dico-text {
+  color: #283aff;
+}
+.navbar #dico-text:focus {
+  animation: Disco-Text 1.5s infinite;
+}
+
+@keyframes Disco-Text {
+  0% {
+    color: rgb(233, 159, 49);
+  }
+  15% {
+    color: rgb(197, 197, 52);
+  }
+  25% {
+    color: rgb(133, 211, 44);
+  }
+  50% {
+    color: rgb(89, 161, 255);
+  }
+  75% {
+    color: rgb(255, 76, 195);
+  }
+  100% {
+    color: rgb(238, 50, 90);
+  }
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 647px;
+}
+
+.container2.O {
+  height: 100%;
+  background-color: blue;
+}
+
+.text-Contain {
+  width: 100%;
+  height: 100%;
+}
+.container .text-Contain {
+  position: absolute;
+  top: 30vh;
+  align-items: center;
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.text-Contain h1 {
+  margin-bottom: 5px;
+}
+.text-Contain p {
+  line-height: 1.6;
+}
+
+.text-Contain button {
+  background-color: #283aff;
+  margin-top: 30px;
+  width: 136px;
+  height: 46px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+.text-Contain button:hover {
+  background-color: rgba(40, 58, 255, 0.8);
+}
+
+/* making sidebar for website */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 240px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.671);
+  backdrop-filter: blur(5px);
+  margin: 0px;
+}
+
+.menuButton {
+  display: none;
+}
+
+.sidebar ul {
+  flex-direction: column;
+  justify-content: center;
+  top: 50vh;
+  align-items: center;
+}
+
+.menuButton {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+}
+
+/* starting to make this website responsive */
+
+@media (max-width: 800px) {
+  .hideonMobile {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  #nav-logo {
+    user-select: none;
+    top: 10px;
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 5px;
+  }
+
+  #baricon {
+    margin: 0px;
+  }
+
+  .navbar ul {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+  }
+  .container {
+    height: 100vh;
+  }
+  .sidebar ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .text-Contain{
+    width: 70%;
+    height: 70%;
+  }
+  #sidebar-cross {
+  position: absolute;
+  right: 0;
+}
+}
+
+/* #sidebar-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+#sidebar-cross {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    margin: 0px;
+  }
+}
