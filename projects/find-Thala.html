@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Thala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        display: flex;
+        position: relative;
+        top: 40vh;
+        justify-content: center;
+      }
+      #Thala {
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        height: 100vh;
+      }
+
+      #userInput {
+        height: 35px;
+        width: 400px;
+        display: block;
+      }
+
+      #findThala {
+        height: 40px;
+        background-color: #008006;
+        cursor: pointer;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+      }
+
+      #tryagainButton {
+        font-size: 16px;
+        height: 40px;
+        background-color: #008006;
+        cursor: pointer;
+        border: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Find Thala for reason</h1>
+    <div id="Thala">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Enter any number to find thala"
+      />
+      <button id="findThala" onclick="checkAndPlay()">Find Thala</button>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
