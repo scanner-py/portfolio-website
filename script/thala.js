@@ -1,5 +1,5 @@
 const audio = new Audio(
-  "Chudi Jo Khankee (Reply Version) - 64Kbps-(Mr-Jat.in).mp3"
+  "Assets/Audio/Chudi Jo Khankee (Reply Version) - 64Kbps-(Mr-Jat.in).mp3"
 );
 
 function checkAndPlay() {
