@@ -10,7 +10,53 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/Style/thala.css" />
+    <style>
+      body {
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        display: flex;
+        position: relative;
+        top: 40vh;
+        justify-content: center;
+      }
+      #Thala {
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        height: 100vh;
+      }
+
+      #userInput {
+        height: 35px;
+        width: 400px;
+        display: block;
+      }
+
+      #findThala {
+        height: 40px;
+        background-color: #008006;
+        cursor: pointer;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+      }
+
+      #tryagainButton {
+        font-size: 16px;
+        height: 40px;
+        background-color: #008006;
+        cursor: pointer;
+        border: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Find Thala for reason</h1>
@@ -21,8 +67,34 @@
         placeholder="Enter any number to find thala"
       />
       <button id="findThala" onclick="checkAndPlay()">Find Thala</button>
-
-      <script src="/script/thala.js"></script>
     </div>
   </body>
+  <script>
+      const audio = new Audio("/Assets/Audio/Chudi Jo Khankee (Reply Version) - 64Kbps-(Mr-Jat.in).mp3");
+
+      function checkAndPlay() {
+        const userInput = document.getElementById("userInput").value;
+        const result = eval(userInput);
+
+        if (Number(result) === 7) {
+          document.body.innerHTML = `<h1>${userInput} = Thala for reason 💪 Guys</h1><div id="Thala"><button id="tryagainButton" onclick="defaultPage()">Try Again</button></div>`;
+          audio.play();
+        } else {
+          document.body.innerHTML = `<h1>${userInput} not = 7</h1><div id="Thala"><button id="tryagainButton" onclick="defaultPage()">Try Again</button></div>`;
+        }
+      }
+
+      function defaultPage() {
+        audio.pause();
+        audio.currentTime = 0;
+        document.body.innerHTML = `<body>
+          <h1>Find Thala for reason</h1>
+          <; id="Thala">
+            <input type="text" id="userInput" placeholder="Enter any number to find thala" />
+            <button id="findThala" onclick="checkAndPlay()">Find Thala</button>
+            <script src="script.js"></script>
+          </div>`;
+      }
+
+      </script>
 </html>
