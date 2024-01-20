@@ -87,11 +87,15 @@
       function defaultPage() {
         audio.pause();
         audio.currentTime = 0;
-        document.body.innerHTML = `<body>
-          <h1>Find Thala for reason</h1>
-          <; id="Thala">
-            <input type="text" id="userInput" placeholder="Enter any number to find thala" />
-            <button id="findThala" onclick="checkAndPlay()">Find Thala</button>`;
+        document.body.innerHTML = `<h1>Find Thala for reason</h1>
+    <div id="Thala">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Enter any number to find thala"
+      />
+      <button id="findThala" onclick="checkAndPlay()">Find Thala</button>
+    </div>`;
       }
 
       </script>
