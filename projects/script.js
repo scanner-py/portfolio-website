@@ -70,7 +70,7 @@ const scoreUpdate = (result) => {
 const finalResult = () => {
   if (playerScore === 3) {
     const updatePage = document.getElementsByTagName("body")[0];
-    updatePage.innerHTML = `<h1>Computer Wins</h1>\n <p id="display-score"> Your Score : ${playerScore} vs Computer Score : ${computerScore}\n<button onclick="refreshpage()" id="play-again-btn">Replay</button>`;
+    updatePage.innerHTML = `<h1>You Win</h1>\n <p id="display-score"> Your Score : ${playerScore} vs Computer Score : ${computerScore}\n<button onclick="refreshpage()" id="play-again-btn">Replay</button>`;
   } else if (computerScore === 3) {
     const updatePage = document.getElementsByTagName("body")[0];
     updatePage.innerHTML = `<h1>Computer Wins</h1>\n <p id="display-score"> Your Score : ${playerScore} vs Computer Score : ${computerScore}\n<button onclick="refreshpage()" id="play-again-btn">Replay</button>`;
