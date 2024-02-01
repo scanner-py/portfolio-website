@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+}
+
+.heading {
+  margin-right: 200px;
+  padding: 50px;
+}
+.heading h1 {
+  text-decoration: underline 5px;
+  text-decoration-color: #8f95d3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.inputArea input {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 25px;
+  border: solid 2px lightgray;
+  text-align: center;
+  font-size: 16px;
+}
+
+.love-score {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.love-score img {
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
+}
+
+.calculate-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.calculate-btn button {
+  height: 60px;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  background-color: #8f95d3;
+  font-size: 18px;
+  font-weight: 00;
+}
