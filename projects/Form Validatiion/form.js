@@ -15,7 +15,7 @@ const checkIfFormValid = () => {
     nameElm.value = null;
   } else if (!emailElm.value.endsWith("@gmail.com")) {
     alert("not a valid email");
-  }else {
+  } else {
     document.body.innerHTML = `<p>Form has been submited</p>`;
   }
 };
