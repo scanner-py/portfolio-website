@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  padding: 5px 5px 5px 5px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.form input {
+  height: 60px;
+  width: 250px;
+  border-radius: 15px;
+  border: none !important;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.child-card {
+  background-color: rgb(233, 237, 222);
+  padding: 105px 55px 105px 55px;
+  border-radius: 25px;
+}
+
+.form:hover {
+  background-color: rgba(77, 80, 97, 1);
+}
+
+#sub {
+  height: 40px;
+  width: 100%;
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 500px) {
+  .child-card {
+  padding: 50px 20px 50px 20px;
+}
+}
+@media (max-width: 400px) {
+  .child-card {
+  padding: 30px 15px 30px 15px;
+}
+}
+@media (max-width: 360px) {
+  .child-card {
+  padding: 0;
+}
+}
+@media (max-width: 200px) {
+  .child-card {
+  padding: 20px 10px 20px 10px;
+}
+}
