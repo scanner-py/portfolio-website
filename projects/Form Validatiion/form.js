@@ -22,5 +22,4 @@ const checkIfFormValid = () => {
 
 btn.addEventListener("click", () => {
   checkIfFormValid();
-  document.body.innerHTML = `<p>Form has been submited</p>`;
 });
